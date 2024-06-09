@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Nutrient's Concentration Prediction</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('templates/soil.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .input-field {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 80%; /* Adjust the width as needed */
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth hover transition */
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+    </style>
+    
+</head>
+
+<body style="background-image: url('templates/soil.jpg'); background-size: cover; background-position: center;">
+
+    <div class="container">
+        <h1>Soil Nutrient's Concentration Prediction</h1>
+        <form action="/predict" method="post">
+            <div class="input-field">
+                <input type="text" name="input_1" placeholder="A(410)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_2" placeholder="B(435)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_3" placeholder="C(460)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_4" placeholder="D(485)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_5" placeholder="E(510)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_6" placeholder="F(535)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_7" placeholder="G(560)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_8" placeholder="H(585)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_9" placeholder="R(610)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_10" placeholder="I(645)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_11" placeholder="S(680)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_12" placeholder="J(705)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_13" placeholder="U(760)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_14" placeholder="V(810)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_15" placeholder="W(860)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_16" placeholder="K(900)">
+            </div>
+            <div class="input-field">
+                <input type="text" name="input_17" placeholder="L(940)">
+            </div>
+
+            <div class="input-field">
+                <input type="text" name="input_18" placeholder="T(730)">
+            </div>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>

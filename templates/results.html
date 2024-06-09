@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Prediction Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td {
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soil Prediction Results</h1>
+    <table border="1">
+        <tr>
+            <th>Parameter</th>
+            <th>Predicted Value</th>
+        </tr>
+        <tr>
+            <td>pH</td>
+            <td>{{ predictions[0][0] }}</td>
+        </tr>
+        <tr>
+            <td>EC(dS/m)</td>
+            <td>{{ predictions[0][1] }}</td>
+        </tr>
+        <tr>
+            <td>OC(%)</td>
+            <td>{{ predictions[0][2] }}</td>
+        </tr>
+        <tr>
+            <td>P(kg/ha)</td>
+            <td>{{ predictions[0][3] }}</td>
+        </tr>
+        <tr>
+            <td>K(kg/ha)</td>
+            <td>{{ predictions[0][4] }}</td>
+        </tr>
+        <tr>
+            <td>Ca(meq/100g)</td>
+            <td>{{ predictions[0][5] }}</td>
+        </tr>
+        <tr>
+            <td>Mg(meq/100g)</td>
+            <td>{{ predictions[0][6] }}</td>
+        </tr>
+        <tr>
+            <td>S(ppm)</td>
+            <td>{{ predictions[0][7] }}</td>
+        </tr>
+        <tr>
+            <td>Fe(ppm)</td>
+            <td>{{ predictions[0][8] }}</td>
+        </tr>
+        <tr>
+            <td>Mn(ppm)</td>
+            <td>{{ predictions[0][9] }}</td>
+        </tr>
+        <tr>
+            <td>Cu(ppm)</td>
+            <td>{{ predictions[0][10] }}</td>
+        </tr>
+        <tr>
+            <td>Zn(ppm)</td>
+            <td>{{ predictions[0][11] }}</td>
+        </tr>
+        <tr>
+            <td>B(ppm)</td>
+            <td>{{ predictions[0][12] }}</td>
+        </tr>
+    </table>
+    <!-- Display Evaluation Metrics -->
+    <h2>Choosen ML Algorithm: Gaussian Process Model</h2>
+    <h2>Evaluation Metrics:</h2>
+    <ul>
+        <li>Mean Squared Error (MSE): 55.72887312561614</li>
+        <li>R-squared (R2) Score: 0.9897988904720223</li>
+        <li>Mean Absolute Error (MAE): 0.3999525592974536</li>
+        <li>Root Mean Squared Error (RMSE): 7.465177367324647</li>
+    </ul>
+</body>
+</html>
+
+
+
+
